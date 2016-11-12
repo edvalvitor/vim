@@ -42,5 +42,11 @@ noremap <C-F> /
 "Exit
 noremap <F9> :q<CR>
 
-
+"Executar Python
 map <F10> <Esc>:w<CR>:!clear && python3 %<CR>
+
+"Mostrar Cursor
+set cursorline
+hi CursorLine term=bold cterm=none guibg=Grey40 ctermfg=none
+set cursorcolumn
+hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=none guibg=darkred guifg=white
